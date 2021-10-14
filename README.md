@@ -12,6 +12,7 @@ ProCam will be installed as Service on Raspberry. <br/>
 The web app is accessible on port **5050** with the URL : &nbsp; &nbsp; http://**IP_ADRESS_OF_RASPBERRY**:5050
 
 ## &nbsp; &nbsp; Steps of installation
+#### Connect to Raspberry with User **pi**
 #### Clone ProCam repository on the Raspberry
 #### Go to the repository folder
 #### Give execution right on the installation file : &nbsp; &nbsp; **chmod +x ./install.sh**
