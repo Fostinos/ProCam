@@ -4,7 +4,7 @@ Computer Vision Project on Raspberry Pi 3 B+
 # Requirements
 #### Raspberry Pi 2 [minimum]
 #### Raspberry Pi Camera Board v1 
-#### USB Micro B Charger 
+#### Charger USB Micro B  
 #### SD Card [16 GB minimum]
 
 # Installation
