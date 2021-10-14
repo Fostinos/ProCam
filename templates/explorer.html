@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>FILE EXPLORER</title>
+      <meta name="viewport" content="width=device-width, height=device-height,initial-scale=1.0"/>
+      <link type="image/png" href="../static/logo.png" rel="icon">
+      <link type = "text/css" href="../static/style.css" rel="stylesheet">
+      <link type = "text/css" href="../static/jquery-ui.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="content">
+         <div id="tabs">
+            <ul>
+               <li><a href="#tabs-1">IMAGES</a></li>
+            </ul>
+            <div id="tabs-1" style="margin-top: 5px; padding: 5px;" >
+               <button id="button-start" style="margin: 0px 10px ;">Previous Intruder</button> 
+               <button id="button-prev" style="margin: 0px 10px ;">Previous Image</button>
+               <button id="button-play" style="margin: 0px 10px ;">Play/Stop</button>
+               <button id="button-next" style="margin: 0px 10px ;">Next Image</button>
+               <button id="button-end" style="margin: 0px 10px ;">Next Intruder</button>
+            </div>
+         </div>
+         <div class="visual">
+            <div class="item1">
+               <button id="button-icon-live">Camera Live</button>
+            </div>
+            <div class="item2">
+               <h4 class="visual-title">IMAGES</h4>
+            </div>
+            <div class="item3">
+               <button id="button-icon-info">About System</button>
+            </div>
+            <div id="div-image" class="item4"> 
+               <img id="image-frame" class="visual-frame" src="" width="600" height="440" alt="image frame">
+            </div>
+         </div>
+      </div> 
+   </body>
+   <script src="../static/jquery-3.6.0.min.js"></script>
+   <script src="../static/jquery-ui.min.js"></script> 
+   <script src="../static/explorer.js"></script>
+</html>

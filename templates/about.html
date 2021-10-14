@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>ABOUT SYSTEM</title>
+      <meta name="viewport" content="width=device-width, height=device-height,initial-scale=1.0"/>
+      <link type="image/png" href="../static/logo.png" rel="icon">
+      <link type = "text/css" href="../static/style.css" rel="stylesheet">
+      <link type = "text/css" href="../static/jquery-ui.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="content">
+         <div id="tabs">
+            <ul>
+               <li><a href="#tabs-1">CPU</a></li>
+               <li><a href="#tabs-2">DISK</a></li>
+               <li><a href="#tabs-3">RAM</a></li>
+            </ul>
+            <div id="tabs-1">
+               <div class="div-switch tooltip" style="padding-left: 20px;">
+                  Min Freq:
+                  <b id="cpu-min">600 Hz</b>
+                  <span class="tooltiptext">Min Frequency of CPU</span>
+               </div>
+               <div class="div-switch tooltip" style="padding-left: 20px;">
+                  Cores:
+                  <b id="cpu-cores">4</b>
+                  <span class="tooltiptext">Cores of CPU</span>
+               </div>
+               <div class="div-switch tooltip" style="padding-left: 20px;">
+                  Max Freq:
+                  <b id="cpu-max">1400 Hz</b>
+                  <span class="tooltiptext">Max Frequency of CPU</span>
+               </div>
+            </div>
+            
+            <div id="tabs-2">
+               <div class="div-switch tooltip" style="padding-left: 20px;">
+                  DISK Total:  
+                  <b id="disk-total">16 GB</b>
+                  <span class="tooltiptext">Total Disk</span>
+               </div>
+            </div>
+            <div id="tabs-3">
+               <div class="div-switch tooltip" style="padding-left: 20px;">
+                  RAM Total:  
+                  <b id="ram-total">1000 MB</b>
+                  <span class="tooltiptext">Total Memory</span>
+               </div>
+            </div>
+         </div>
+         <div class="visual">
+            <div class="item1">
+               <button id="button-icon-disk">File Explorer</button>
+            </div>
+            <div class="item2">
+               <h2 class="visual-title">PERFORMANCE</h2>
+            </div>
+            <div class="item3">
+               <button id="button-icon-live">Camera Live</button>
+            </div>
+            <div class="item4"> 
+
+               <div id="cpu-dynamic">
+                  <br/>
+                  <br/>
+                  <div class="div-switch tooltip" style="padding-left: 20px;">
+                     CPU Usage:&nbsp;&nbsp;
+                     <b id="cpu-usage">50 %</b>
+                     <span class="tooltiptext">Usage of CPU</span>
+                  </div>
+                  <br/>
+                  <br/>
+                  <div class="div-switch tooltip" style="padding-left: 20px;">
+                     CPU Frequency:&nbsp;  
+                     <b id="cpu-frequency">1400 Hz</b>
+                     <span class="tooltiptext">Current Frequency</span>
+                  </div>
+                  <br/>
+                  <br/>
+                  <div class="div-switch tooltip" style="padding-left: 20px;">
+                     CPU Temperature:&nbsp;  
+                     <b id="cpu-temperature">50 °C</b>
+                     <span class="tooltiptext">Temperature of CPU</span>
+                  </div>
+               </div>
+               
+               <div id="disk-dynamic">
+                  <br/>
+                  <br/>
+                  <div class="div-switch tooltip" style="padding-left: 20px;">
+                     DISK Usage:&nbsp;&nbsp;
+                     <b id="disk-usage">50 %</b>
+                     <span class="tooltiptext">Usage of DISK</span>
+                  </div>
+                  <br/>
+                  <br/>
+                  <div class="div-switch tooltip" style="padding-left: 20px;">
+                     DISK Available:&nbsp;  
+                     <b id="disk-free">2.50 GB</b>
+                     <span class="tooltiptext">Space Available</span>
+                  </div>
+               </div>
+
+               <div id="ram-dynamic">
+                  <br/>
+                  <br/>
+                  <div class="div-switch tooltip" style="padding-left: 20px;">
+                     RAM Usage:&nbsp;&nbsp;
+                     <b id="ram-usage">50 %</b>
+                     <span class="tooltiptext">Usage of Memory</span>
+                  </div>
+                  <br/>
+                  <br/>
+                  <div class="div-switch tooltip" style="padding-left: 20px;">
+                     RAM Available:&nbsp;  
+                     <b id="ram-free">500 MB</b>
+                     <span class="tooltiptext">Memory Available</span>
+                  </div>
+                  <br/>
+                  <br/>
+                  <div class="div-switch tooltip" style="padding-left: 20px;">
+                     RAM Cached:&nbsp;&nbsp;  
+                     <b id="ram-cached">75 MB</b>
+                     <span class="tooltiptext">Cached Memory</span>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div> 
+   </body>
+   <script src="../static/jquery-3.6.0.min.js"></script>
+   <script src="../static/jquery-ui.min.js"></script> 
+   <script src="../static/about.js"></script>
+</html>

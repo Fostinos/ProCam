@@ -1,0 +1,26 @@
+{
+    "py/object": "modules.classes.telemetry.Telemetry",
+    "_ID": 1,
+    "_cam": {
+        "py/object": "modules.classes.picam.PiCam",
+        "_kernel_blur": 5,
+        "_surface_step": 500,
+        "_surface_threshold": 5000,
+        "_mask_threshold": 15,
+        "_duration": 30,
+        "_intruder": false
+    },
+    "_about": [
+        "Model : 3B+",
+        "Revision : a020d3",
+        "SoC : BCM2837",
+        "RAM : 1GB",
+        "Storage : MicroSD",
+        "USB ports : 4 (of which 0 USB3)",
+        "Ethernet ports : 1 (300Mbps max. speed)",
+        "Wi-fi : True",
+        "Bluetooth : True",
+        "Camera ports (CSI) : 1",
+        "Display ports (DSI) : 1"
+    ]
+}
