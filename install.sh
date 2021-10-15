@@ -3,7 +3,7 @@ echo -e "INSTALLING...\n"
 
 # ProCam Project Folder
 echo "ProCam Project Folder..."
-mkdir $HOME/local/ProCam
+mkdir -p $HOME/local/ProCam
 cp -R `pwd`/* $HOME/local/ProCam
 rm $HOME/local/ProCam/install.sh
 rm $HOME/local/ProCam/README.md
