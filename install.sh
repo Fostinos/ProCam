@@ -3,9 +3,10 @@ echo -e "INSTALLING...\n"
 
 # ProCam Project Folder
 echo "ProCam Project Folder..."
-mkdir $HOME/ProCam
-cp -R `pwd`/* $HOME/ProCam
-rm $HOME/ProCam/install.sh
+mkdir $HOME/local/ProCam
+cp -R `pwd`/* $HOME/local/ProCam
+rm $HOME/local/ProCam/install.sh
+rm $HOME/local/ProCam/README.md
 echo -e "Finished\n"
 
 # ProCam Service Configuration
@@ -20,7 +21,7 @@ After=multi-user.target\n\n
 User=pi\n
 Group=sudo\n
 Type=simple\n
-ExecStart=/usr/bin/python3 /home/pi/ProCam/webapp.py\n
+ExecStart=/usr/bin/python3 /home/pi/local/ProCam/webapp.py\n
 Restart=on-abort\n\n
 
 [Install]\n
@@ -33,7 +34,7 @@ echo -e "Finished\n"
 # Start Service ProCam
 echo  "Start Service ProCam..."
 sudo chmod 644 $ServiceFolder/ProCam.service
-chmod +x /home/pi/ProCam/webapp.py
+chmod +x /home/pi/local/ProCam/webapp.py
 sudo systemctl daemon-reload
 sudo systemctl enable ProCam.service
 sudo systemctl start ProCam.service
