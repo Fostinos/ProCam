@@ -17,3 +17,9 @@ The web app is accessible on port **5050** with the URL : &nbsp; &nbsp; http://*
 #### Go to the repository folder
 #### Give execution right on the installation file : &nbsp; &nbsp; **chmod +x ./install.sh**
 #### Execute the installation file : &nbsp; &nbsp;  **./install.sh**
+
+# Connecting Camera Module
+![Alt Text](https://github.com/Fostinos/ProCam/blob/main/videos/vid_0.gif)
+
+# ProCam System
+![Alt Text](https://github.com/Fostinos/ProCam/blob/main/screenshots/shot_0_original.png)
