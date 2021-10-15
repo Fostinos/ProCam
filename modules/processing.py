@@ -156,6 +156,9 @@ def gen_frames():  # generate frame by frame from camera
 
             else:  # camera offline
                 try:
+                    path = os.path.sep.join([cfg.shotDirectory, 'shot_{}_original.png'.format(0)])
+                    if os.path.exists(path):
+                        original = cv2.imread(path, cv2.IMREAD_UNCHANGED) # original image with raspberry
                     offString = "OFF : " + datetime.now().strftime("%d %B %Y at %H:%M:%S")
                     frame = cv2.putText(cv2.flip(original, 1), offString, (50,30),
                                         cv2.FONT_HERSHEY_SCRIPT_SIMPLEX, 1, (0,0,255), 4)
