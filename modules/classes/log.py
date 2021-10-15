@@ -4,7 +4,7 @@ import os
 
 class Path:
     # constants 
-    projectDirectory = '/home/pi/ProCam/'
+    projectDirectory = '/home/pi/local/ProCam/'
     configDirectory = projectDirectory + 'config'
     shotDirectory = projectDirectory + 'screenshots'
     videoDirectory = projectDirectory + 'videos'
