@@ -61,11 +61,7 @@ def gen_frames():  # generate frame by frame from camera
     else: # camera offline
         path = os.path.sep.join([cfg.shotDirectory, 'shot_{}_original.png'.format(gb.recordID-1)])
         if os.path.exists(path):
-            original = cv2.imread(path, cv2.IMREAD_UNCHANGED) # last original image 
-            success = True
-        else: # no original image
-            path = os.path.sep.join([cfg.projectDirectory, 'static/logo.png'])
-            original = cv2.imread(path, cv2.IMREAD_UNCHANGED) # last original image 
+            original = cv2.imread(path, cv2.IMREAD_UNCHANGED) # last original image
             success = True
     if success:
         # change previous color image to gray image
