@@ -5,7 +5,7 @@ from modules.classes.log import Log, Path
 import logging
 from logging.handlers import RotatingFileHandler
 
-projectDirectory = '/home/pi/ProCam/'
+projectDirectory = '/home/pi/local/ProCam/'
 configDirectory = projectDirectory + 'config'
 shotDirectory = projectDirectory + 'screenshots'
 videoDirectory = projectDirectory + 'videos'
